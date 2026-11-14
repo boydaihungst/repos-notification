@@ -7,26 +7,20 @@
 # notify_existing: false  # optional per branch; defaults to false
 
 repositories:
-  # - owner: torvalds
-  #   repo: linux
-  #   branches:
-  #     - name: master
-  #       latest_merged_commit: null
-  #       latest_merged_at: null
-  #       latest_merged_pr: null
-  #       notify_existing: false
-  #
-  # - owner: microsoft
-  #   repo: vscode
-  #   branches:
-  #     - name: main
-  #       latest_merged_commit: null
-  #       latest_merged_at: null
-  #       latest_merged_pr: null
-  #       notify_existing: false
-  #
-  #     - name: release/1.90
-  #       latest_merged_commit: null
-  #       latest_merged_at: null
-  #       latest_merged_pr: null
-  #       notify_existing: false
+  - owner: noctalia-dev
+    repo: noctalia
+    branches:
+      - name: main
+        latest_merged_commit: null
+        latest_merged_at: null
+        latest_merged_pr: null
+        notify_existing: false
+
+  - owner: noctalia-dev
+    repo: umbriel
+    branches:
+      - name: main
+        latest_merged_commit: null
+        latest_merged_at: null
+        latest_merged_pr: null
+        notify_existing: false
