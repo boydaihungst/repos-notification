@@ -1,21 +1,53 @@
+# - owner: immich-app
+#   repo: immich/feat-1
+#   branches:
+#   - name: main
+#     latest_merged_commit: null
+#     latest_merged_at: null
+#     latest_merged_pr: null
+#     notify_existing: false
 repositories:
-- owner: noctalia-dev
-  repo: noctalia
-  branches:
-  - name: main
-    latest_merged_commit: 8eecf934421c1c992f85884314ac5c323935b944
-    latest_merged_at: '2026-11-14T01:20:58Z'
-    latest_merged_pr: 5324
-    notify_existing: false
-- owner: noctalia-dev
-  repo: umbriel
-  branches:
-  - name: main
-    latest_merged_commit: 88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-    latest_merged_at: '2026-11-12T22:20:58Z'
-    latest_merged_pr: 773
-    notify_existing: false
+  - owner: noctalia-dev
+    repo: noctalia
+    branches:
+      - name: main
+        latest_merged_commit: 8eecf934421c1c992f85884314ac5c323935b944
+        latest_merged_at: "2026-11-14T01:20:58Z"
+        latest_merged_pr: 5324
+        notify_existing: false
+  - owner: noctalia-dev
+    repo: umbriel
+    branches:
+      - name: main
+        latest_merged_commit: 88ba829c6152ee55cd2ffa9d80e7f9dee543605b
+        latest_merged_at: "2026-11-12T22:20:58Z"
+        latest_merged_pr: 773
+        notify_existing: false
+  - owner: immich-app
+    repo: immich
+    branches:
+      - name: main
+        latest_merged_commit: null
+        latest_merged_at: null
+        latest_merged_pr: null
+        notify_existing: false
+  - owner: TIANLI0
+    repo: THRM
+    branches:
+      - name: main
+        latest_merged_commit: null
+        latest_merged_at: null
+        latest_merged_pr: null
+        notify_existing: false
+  - owner: bookorbit
+    repo: bookorbit
+    branches:
+      - name: main
+        latest_merged_commit: null
+        latest_merged_at: null
+        latest_merged_pr: null
+        notify_existing: false
 outbox: []
 processed_merge_ids:
-- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+  - noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
+  - noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
