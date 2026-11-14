@@ -61,30 +61,6 @@ outbox:
       status: sent
       issue_number: 1
       sent_at: '2026-11-14T08:04:15Z'
-    g:
-      status: pending
-      last_error: 'Unknown notification channel: g'
-      last_attempt_at: '2026-11-14T08:00:02Z'
-    i:
-      status: pending
-      last_error: 'Unknown notification channel: i'
-      last_attempt_at: '2026-11-14T08:00:02Z'
-    t:
-      status: pending
-      last_error: 'Unknown notification channel: t'
-      last_attempt_at: '2026-11-14T08:00:02Z'
-    h:
-      status: pending
-      last_error: 'Unknown notification channel: h'
-      last_attempt_at: '2026-11-14T08:00:02Z'
-    u:
-      status: pending
-      last_error: 'Unknown notification channel: u'
-      last_attempt_at: '2026-11-14T08:00:02Z'
-    b:
-      status: pending
-      last_error: 'Unknown notification channel: b'
-      last_attempt_at: '2026-11-14T08:00:02Z'
 processed_merge_ids:
 - noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
 - immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
