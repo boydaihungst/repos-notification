@@ -67,7 +67,7 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
 
           # Optional GitHub username to @mention in created Issues.
-          GITHUB_NOTIFY_USERNAME: ${{ vars.GITHUB_NOTIFY_USERNAME }}
+          NOTIFY_USERNAME: ${{ vars.NOTIFY_USERNAME }}
 
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
           INITIALIZE_ONLY: ${{ inputs.initialize || 'false' }}
