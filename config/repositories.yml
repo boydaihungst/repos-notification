@@ -3,8 +3,9 @@ repositories:
   repo: test
   branches:
   - name: master
-    latest_merged_commit: null
-    latest_merged_at: null
-    latest_merged_pr: null
+    latest_merged_commit: b7b7b2ed1eed7446510a6fa6fe39e87d16bd9f3b
+    latest_merged_at: '2026-11-14T08:55:38Z'
+    latest_merged_pr: 1
 outbox: []
-processed_merge_ids: []
+processed_merge_ids:
+- boydaihungst/test#1@b7b7b2ed1eed7446510a6fa6fe39e87d16bd9f3b
