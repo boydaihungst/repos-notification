@@ -1,33 +1,24 @@
-name: GitHub Merge Watcher
-
+name: Renovate
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    # GitHub Actions schedule uses UTC. Run at minute 17 of every hour.
-    - cron: "0 * * * *"
   workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Discover merges without sending notifications or changing state"
-        required: false
-        type: boolean
-        default: false
-      initialize:
-        description: "Initialize empty branch baselines without notifying historical merges"
-        required: false
-        type: boolean
-        default: false
-
-permissions:
-  contents: write
-  issues: write
+  schedule:
+    - cron: "1 */12 * * *"
+  # workflow_dispatch:
+  #   inputs:
+  #     dry_run:
+  #       description: "Discover merges without sending notifications or changing state"
+  #       required: false
+  #       type: boolean
+  #       default: false
+  #     initialize:
+  #       description: "Initialize empty branch baselines without notifying historical merges"
+  #       required: false
+  #       type: boolean
+  #       default: false
 
 jobs:
-  watch:
+  renovate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout watcher repository
         uses: actions/checkout@v4
@@ -68,13 +59,10 @@ jobs:
           DISCORD_NOTIFY: ${{ vars.DISCORD_NOTIFY }}
           EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
           _GITHUB_NOTIFY: ${{ vars._GITHUB_NOTIFY }}
-
-          DRY_RUN: ${{ inputs.dry_run || 'false' }}
-          INITIALIZE_ONLY: ${{ inputs.initialize || 'false' }}
+          
         run: python scripts/watcher.py
 
       - name: Commit updated watcher state
-        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
