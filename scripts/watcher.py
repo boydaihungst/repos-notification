@@ -412,11 +412,13 @@ def deliver_channel(channel: str, event: dict[str, Any]) -> None:
 
 
 def process_outbox(config: dict[str, Any]) -> bool:
-    channels = ("github",)
+    channels = ()
     if DISCORD_NOTIFY:
         channels = (*channels, "discord")
     if EMAIL_NOTIFY:
         channels = (*channels, "email")
+    if GITHUB_NOTIFY:
+        channels = (*channels, "github")
     all_ok = True
     processed = set(config["processed_merge_ids"])
 
