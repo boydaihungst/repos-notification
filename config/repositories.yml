@@ -1,8 +1,10 @@
 repositories:
-  - owner: boydaihungst
-    repo: test
-    branches:
-    - name: master
-      latest_merged_commit: null
-      latest_merged_at: null
-      latest_merged_pr: null
+- owner: boydaihungst
+  repo: test
+  branches:
+  - name: master
+    latest_merged_commit: null
+    latest_merged_at: null
+    latest_merged_pr: null
+outbox: []
+processed_merge_ids: []
