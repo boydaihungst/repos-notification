@@ -1,4 +1,12 @@
 repositories:
+- owner: boydaihungst
+  repo: test
+  branches:
+  - name: master
+    latest_merged_commit: null
+    latest_merged_at: null
+    latest_merged_pr: null
+    notify_existing: false
 - owner: noctalia-dev
   repo: noctalia
   branches:
@@ -39,28 +47,6 @@ repositories:
     latest_merged_at: '2026-11-12T19:09:29Z'
     latest_merged_pr: 2174
     notify_existing: false
-outbox:
-- id: noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-  owner: noctalia-dev
-  repo: noctalia
-  branch: main
-  pr_number: 5213
-  pr_title: 'fix(brightness): restart ddcutil discovery on request after retries run out'
-  pr_url: https://github.com/noctalia-dev/noctalia/pull/5213
-  commit_sha: d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-  commit_url: https://github.com/noctalia-dev/noctalia/commit/d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-  author: etrobert
-  merged_at: '2026-11-14T01:57:21Z'
-  discovered_at: '2026-11-14T07:59:59Z'
-  delivery:
-    discord:
-      status: pending
-    email:
-      status: pending
-    github:
-      status: sent
-      issue_number: 1
-      sent_at: '2026-11-14T08:04:15Z'
 processed_merge_ids:
 - immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
 - TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
