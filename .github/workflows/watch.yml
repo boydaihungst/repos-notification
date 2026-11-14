@@ -3,7 +3,7 @@ name: GitHub Merge Watcher
 on:
   schedule:
     # GitHub Actions schedule uses UTC. Run at minute 17 of every hour.
-    - cron: "1 */12 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -24,7 +24,6 @@ permissions:
 jobs:
   watch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
 
     steps:
       - name: Checkout watcher repository
