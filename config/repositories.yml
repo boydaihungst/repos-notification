@@ -1,0 +1,32 @@
+# Add public GitHub repositories and branches to monitor.
+#
+# latest_merged_* fields are maintained automatically by watcher.py.
+# Leave them null for the first run. The first run establishes a baseline
+# and does NOT notify historical merges unless notify_existing is true.
+#
+# notify_existing: false  # optional per branch; defaults to false
+
+repositories:
+  # - owner: torvalds
+  #   repo: linux
+  #   branches:
+  #     - name: master
+  #       latest_merged_commit: null
+  #       latest_merged_at: null
+  #       latest_merged_pr: null
+  #       notify_existing: false
+  #
+  # - owner: microsoft
+  #   repo: vscode
+  #   branches:
+  #     - name: main
+  #       latest_merged_commit: null
+  #       latest_merged_at: null
+  #       latest_merged_pr: null
+  #       notify_existing: false
+  #
+  #     - name: release/1.90
+  #       latest_merged_commit: null
+  #       latest_merged_at: null
+  #       latest_merged_pr: null
+  #       notify_existing: false

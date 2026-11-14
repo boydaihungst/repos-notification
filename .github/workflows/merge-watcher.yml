@@ -1,0 +1,87 @@
+name: GitHub Merge Watcher
+
+on:
+  schedule:
+    # GitHub Actions schedule uses UTC. Run at minute 17 of every hour.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Discover merges without sending notifications or changing state"
+        required: false
+        type: boolean
+        default: false
+      initialize:
+        description: "Initialize empty branch baselines without notifying historical merges"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: github-merge-watcher
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout watcher repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run watcher
+        env:
+          # Used to create GitHub Issues in THIS watcher repository.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # Optional: PAT used to read public repositories with a higher API
+          # rate limit. If empty, requests are unauthenticated.
+          GH_READ_TOKEN: ${{ secrets.GH_READ_TOKEN }}
+
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_NOTIFY: ${{ secrets.DISCORD_NOTIFY }}
+
+          EMAIL_NOTIFY: ${{ secrets.EMAIL_NOTIFY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+
+          # Optional GitHub username to @mention in created Issues.
+          GITHUB_NOTIFY_USERNAME: ${{ vars.GITHUB_NOTIFY_USERNAME }}
+
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          INITIALIZE_ONLY: ${{ inputs.initialize || 'false' }}
+        run: python scripts/watcher.py
+
+      - name: Commit updated watcher state
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/repositories.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update merge watcher state"
+            git push
+          fi
