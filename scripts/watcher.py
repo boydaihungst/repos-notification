@@ -412,7 +412,7 @@ def deliver_channel(channel: str, event: dict[str, Any]) -> None:
 
 
 def process_outbox(config: dict[str, Any]) -> bool:
-    channels = "github"
+    channels = ("github",)
     if DISCORD_NOTIFY:
         channels = (*channels, "discord")
     if EMAIL_NOTIFY:
