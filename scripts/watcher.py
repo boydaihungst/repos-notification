@@ -372,7 +372,6 @@ def notify_github_issue(event: dict[str, Any]) -> int:
         f"- **Repository:** [{event['owner']}/{event['repo']}](https://github.com/{event['owner']}/{event['repo']})\n"
         f"- **Branch:** `{event['branch']}`\n"
         f"- **Pull request:** [#{event['pr_number']} — {event['pr_title']}]({event['pr_url']})\n"
-        f"- **Author:** @{event['author']}\n"
         f"- **Merged at:** {event['merged_at']}\n"
         f"- **Merge commit:** [`{event['commit_sha'][:12]}`]({event['commit_url']})\n\n"
         f"<!-- {marker} -->"
