@@ -67,15 +67,15 @@ repositories:
 
 Fields:
 
-| Field | Meaning |
-|---|---|
-| `owner` | Repository owner or organization |
-| `repo` | Repository name |
-| `branches[].name` | Base branch to monitor |
-| `latest_merged_commit` | Last observed merge commit SHA; maintained by the script |
-| `latest_merged_at` | Last observed merge timestamp; maintained by the script |
-| `latest_merged_pr` | Last observed merged PR number; maintained by the script |
-| `notify_existing` | If true on first run, enqueue historical merged PRs returned by the API |
+| Field                  | Meaning                                                                 |
+| ---------------------- | ----------------------------------------------------------------------- |
+| `owner`                | Repository owner or organization                                        |
+| `repo`                 | Repository name                                                         |
+| `branches[].name`      | Base branch to monitor                                                  |
+| `latest_merged_commit` | Last observed merge commit SHA; maintained by the script                |
+| `latest_merged_at`     | Last observed merge timestamp; maintained by the script                 |
+| `latest_merged_pr`     | Last observed merged PR number; maintained by the script                |
+| `notify_existing`      | If true on first run, enqueue historical merged PRs returned by the API |
 
 For a new branch, set the three `latest_merged_*` values to `null`. On the first normal run, the watcher establishes a baseline without notifying historical merges. Later merges are notified.
 
@@ -106,22 +106,24 @@ Add the following repository secrets.
 
 ### Required for the selected three-channel setup
 
-| Secret | Example | Purpose |
-|---|---|---|
-| `DISCORD_WEBHOOK_URL` | `https://discord.com/api/webhooks/...` | Discord incoming webhook |
-| `SMTP_HOST` | `smtp.gmail.com` | SMTP server |
-| `SMTP_PORT` | `587` | STARTTLS port |
-| `SMTP_USERNAME` | `you@gmail.com` | SMTP login |
-| `SMTP_PASSWORD` | Gmail App Password | SMTP password |
-| `SMTP_FROM` | `you@gmail.com` | Sender address |
-| `SMTP_TO` | `you@gmail.com,other@example.com` | Comma-separated recipients |
+| Secret                | Example                                | Purpose                                |
+| --------------------- | -------------------------------------- | -------------------------------------- |
+| `DISCORD_WEBHOOK_URL` | `https://discord.com/api/webhooks/...` | Discord incoming webhook               |
+| `DISCORD_NOTIFY`      | `1` (default)                          | Disable/Enable discord webhook         |
+| `EMAIL_NOTIFY`        | `1` (default)                          | Disable/Enable email smtp notification |
+| `SMTP_HOST`           | `smtp.gmail.com`                       | SMTP server                            |
+| `SMTP_PORT`           | `587`                                  | STARTTLS port                          |
+| `SMTP_USERNAME`       | `you@gmail.com`                        | SMTP login                             |
+| `SMTP_PASSWORD`       | Gmail App Password                     | SMTP password                          |
+| `SMTP_FROM`           | `you@gmail.com`                        | Sender address                         |
+| `SMTP_TO`             | `you@gmail.com,other@example.com`      | Comma-separated recipients             |
 
 For Gmail, enable 2-Step Verification and create an **App Password**. Do not use your normal Google account password. If your email provider requires implicit TLS on port 465, adapt `notify_email()` to use `smtplib.SMTP_SSL`.
 
 ### Optional GitHub read token
 
-| Secret | Purpose |
-|---|---|
+| Secret          | Purpose                                                       |
+| --------------- | ------------------------------------------------------------- |
 | `GH_READ_TOKEN` | Optional token to increase authenticated read API rate limits |
 
 The watched repositories are public, so no token is strictly required to read them. Without `GH_READ_TOKEN`, the GitHub API unauthenticated rate limit applies (normally 60 requests/hour per IP). A fine-grained PAT can be used for public read access; grant only the minimum repository metadata / pull request read permissions supported by GitHub for the selected repositories. Never use a token with broad write permissions just to read public repositories.
@@ -132,9 +134,9 @@ The workflow's built-in `GITHUB_TOKEN` is used only to create Issues and commit 
 
 Add an Actions **repository variable**:
 
-| Variable | Example |
-|---|---|
-| `GITHUB_NOTIFY_USERNAME` | `your-github-username` |
+| Variable          | Example                |
+| ----------------- | ---------------------- |
+| `NOTIFY_USERNAME` | `your-github-username` |
 
 The created Issue will mention this account. Leave it unset if you do not want a mention.
 
