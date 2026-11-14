@@ -32,26 +32,32 @@ DRY_RUN = os.getenv("DRY_RUN", "false").lower() == "true"
 INITIALIZE_ONLY = os.getenv("INITIALIZE_ONLY", "false").lower() == "true"
 
 read_session = requests.Session()
-read_session.headers.update({
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "github-merge-watcher/1.0",
-})
+read_session.headers.update(
+    {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "github-merge-watcher/1.0",
+    }
+)
 if GH_READ_TOKEN:
     read_session.headers["Authorization"] = f"Bearer {GH_READ_TOKEN}"
 
 write_session = requests.Session()
-write_session.headers.update({
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "github-merge-watcher/1.0",
-})
+write_session.headers.update(
+    {
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "github-merge-watcher/1.0",
+    }
+)
 if GITHUB_TOKEN:
     write_session.headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
 
 
 def utc_now() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    return (
+        datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    )
 
 
 def parse_dt(value: str | None) -> datetime | None:
@@ -92,15 +98,16 @@ def api_get(url: str, params: dict[str, Any] | None = None) -> Any:
                     time.sleep(wait)
                     continue
         if response.status_code >= 500 and attempt < 4:
-            time.sleep(2 ** attempt)
+            time.sleep(2**attempt)
             continue
         response.raise_for_status()
         return response.json()
     raise RuntimeError(f"GitHub API request failed after retries: {url}")
 
 
-def fetch_closed_prs(owner: str, repo: str, branch: str,
-                     watermark: datetime | None) -> list[dict[str, Any]]:
+def fetch_closed_prs(
+    owner: str, repo: str, branch: str, watermark: datetime | None
+) -> list[dict[str, Any]]:
     """Fetch closed PRs newest-updated first.
 
     A merged PR's updated_at is never earlier than its merged_at. Once a full
@@ -112,19 +119,23 @@ def fetch_closed_prs(owner: str, repo: str, branch: str,
     found: list[dict[str, Any]] = []
 
     while True:
-        items = api_get(url, {
-            "state": "closed",
-            "base": branch,
-            "sort": "updated",
-            "direction": "desc",
-            "per_page": 100,
-            "page": page,
-        })
+        items = api_get(
+            url,
+            {
+                "state": "closed",
+                "base": branch,
+                "sort": "updated",
+                "direction": "desc",
+                "per_page": 100,
+                "page": page,
+            },
+        )
         if not items:
             break
 
         found.extend(
-            pr for pr in items
+            pr
+            for pr in items
             if pr.get("merged_at") and pr.get("base", {}).get("ref") == branch
         )
 
@@ -132,7 +143,11 @@ def fetch_closed_prs(owner: str, repo: str, branch: str,
         # updated_at, crossing below the watermark is a safe stopping point.
         if watermark and len(items) == 100:
             oldest_updated = min(
-                (parse_dt(pr.get("updated_at")) for pr in items if pr.get("updated_at")),
+                (
+                    parse_dt(pr.get("updated_at"))
+                    for pr in items
+                    if pr.get("updated_at")
+                ),
                 default=None,
             )
             if oldest_updated and oldest_updated < watermark:
@@ -150,7 +165,9 @@ def fetch_closed_prs(owner: str, repo: str, branch: str,
     )
 
 
-def merge_event(owner: str, repo: str, branch: str, pr: dict[str, Any]) -> dict[str, Any]:
+def merge_event(
+    owner: str, repo: str, branch: str, pr: dict[str, Any]
+) -> dict[str, Any]:
     sha = pr.get("merge_commit_sha") or ""
     identity = f"{owner}/{repo}#{pr['number']}@{sha or pr['merged_at']}"
     return {
@@ -220,7 +237,9 @@ def discover(config: dict[str, Any]) -> None:
                 if not INITIALIZE_ONLY:
                     for pr in prs:
                         merged_at = parse_dt(pr.get("merged_at"))
-                        if merged_at and (merged_at > watermark or merged_at == watermark):
+                        if merged_at and (
+                            merged_at > watermark or merged_at == watermark
+                        ):
                             candidates.append(pr)
 
             for pr in candidates:
@@ -252,20 +271,23 @@ def notify_discord(event: dict[str, Any]) -> None:
         f"**PR:** [#{event['pr_number']} — {event['pr_title']}]({event['pr_url']})\n"
         f"**Author:** @{event['author']}\n"
         f"**Merged:** {event['merged_at']}\n"
-        f"**Commit:** [`{sha[:12]}`]({event['commit_url']})" if sha else
-        f"**[{event['owner']}/{event['repo']}]({event['pr_url']})**\n"
+        f"**Commit:** [`{sha[:12]}`]({event['commit_url']})"
+        if sha
+        else f"**[{event['owner']}/{event['repo']}]({event['pr_url']})**\n"
         f"**Branch:** `{event['branch']}`\n"
         f"**PR:** [#{event['pr_number']} — {event['pr_title']}]({event['pr_url']})\n"
         f"**Merged:** {event['merged_at']}"
     )
     payload = {
         "username": "GitHub Merge Watcher",
-        "embeds": [{
-            "title": "Pull request merged",
-            "description": description[:4000],
-            "url": event["pr_url"],
-            "footer": {"text": event["id"][:200]},
-        }],
+        "embeds": [
+            {
+                "title": "Pull request merged",
+                "description": description[:4000],
+                "url": event["pr_url"],
+                "footer": {"text": event["id"][:200]},
+            }
+        ],
         "allowed_mentions": {"parse": []},
     }
     response = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=30)
@@ -342,7 +364,7 @@ def notify_github_issue(event: dict[str, Any]) -> int:
     if existing:
         return int(existing["number"])
 
-    username = os.getenv("GITHUB_NOTIFY_USERNAME", "").strip().lstrip("@")
+    username = os.getenv("NOTIFY_USERNAME", "").strip().lstrip("@")
     mention = f"@{username} " if username else ""
     body = (
         f"{mention}A pull request has been merged into a watched branch.\n\n"
@@ -390,11 +412,11 @@ def deliver_channel(channel: str, event: dict[str, Any]) -> None:
 
 
 def process_outbox(config: dict[str, Any]) -> bool:
-    channels = ("github")
+    channels = "github"
     if DISCORD_NOTIFY:
-        channels = (*channels,"discord")
+        channels = (*channels, "discord")
     if EMAIL_NOTIFY:
-        channels = (*channels,"email")
+        channels = (*channels, "email")
     all_ok = True
     processed = set(config["processed_merge_ids"])
 
@@ -417,19 +439,28 @@ def process_outbox(config: dict[str, Any]) -> bool:
                 state["last_error"] = str(exc)[:500]
                 state["last_attempt_at"] = utc_now()
                 all_ok = False
-                print(f"ERROR delivering {event['id']} to {channel}: {exc}", file=sys.stderr)
+                print(
+                    f"ERROR delivering {event['id']} to {channel}: {exc}",
+                    file=sys.stderr,
+                )
 
-        if all(event["delivery"].get(ch, {}).get("status") == "sent" for ch in channels):
+        if all(
+            event["delivery"].get(ch, {}).get("status") == "sent" for ch in channels
+        ):
             processed.add(event["id"])
 
     config["processed_merge_ids"] = list(processed)[-PROCESSED_IDS_LIMIT:]
     # Retain pending events and a bounded history of completed events.
     pending = [
-        event for event in config["outbox"]
-        if not all(event["delivery"].get(ch, {}).get("status") == "sent" for ch in channels)
+        event
+        for event in config["outbox"]
+        if not all(
+            event["delivery"].get(ch, {}).get("status") == "sent" for ch in channels
+        )
     ]
     completed = [
-        event for event in config["outbox"]
+        event
+        for event in config["outbox"]
         if all(event["delivery"].get(ch, {}).get("status") == "sent" for ch in channels)
     ][-100:]
     config["outbox"] = completed + pending
@@ -441,9 +472,12 @@ def write_summary(config: dict[str, Any]) -> None:
     if not summary_path:
         return
     pending = sum(
-        1 for event in config["outbox"]
-        if not all(event["delivery"].get(ch, {}).get("status") == "sent"
-                   for ch in ("discord", "email", "github"))
+        1
+        for event in config["outbox"]
+        if not all(
+            event["delivery"].get(ch, {}).get("status") == "sent"
+            for ch in ("discord", "email", "github")
+        )
     )
     lines = [
         "## GitHub Merge Watcher",
