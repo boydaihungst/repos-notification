@@ -1,6 +1,9 @@
 name: GitHub Merge Watcher
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     # GitHub Actions schedule uses UTC. Run at minute 17 of every hour.
     - cron: "0 * * * *"
