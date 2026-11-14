@@ -51,9 +51,7 @@ jobs:
           GH_READ_TOKEN: ${{ secrets.GH_READ_TOKEN }}
 
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_NOTIFY: ${{ secrets.DISCORD_NOTIFY }}
-
-          EMAIL_NOTIFY: ${{ secrets.EMAIL_NOTIFY }}
+          
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
@@ -63,6 +61,10 @@ jobs:
 
           # Optional GitHub username to @mention in created Issues.
           NOTIFY_USERNAME: ${{ vars.NOTIFY_USERNAME }}
+          
+          DISCORD_NOTIFY: ${{ vars.DISCORD_NOTIFY }}
+          EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
+          _GITHUB_NOTIFY: ${{ vars._GITHUB_NOTIFY }}
 
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
           INITIALIZE_ONLY: ${{ inputs.initialize || 'false' }}
