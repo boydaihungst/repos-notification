@@ -109,8 +109,6 @@ Add the following repository secrets.
 | Secret                | Example                                | Purpose                                |
 | --------------------- | -------------------------------------- | -------------------------------------- |
 | `DISCORD_WEBHOOK_URL` | `https://discord.com/api/webhooks/...` | Discord incoming webhook               |
-| `DISCORD_NOTIFY`      | `1` (default)                          | Disable/Enable discord webhook         |
-| `EMAIL_NOTIFY`        | `1` (default)                          | Disable/Enable email smtp notification |
 | `SMTP_HOST`           | `smtp.gmail.com`                       | SMTP server                            |
 | `SMTP_PORT`           | `587`                                  | STARTTLS port                          |
 | `SMTP_USERNAME`       | `you@gmail.com`                        | SMTP login                             |
@@ -137,6 +135,9 @@ Add an Actions **repository variable**:
 | Variable          | Example                |
 | ----------------- | ---------------------- |
 | `NOTIFY_USERNAME` | `your-github-username` |
+| `DISCORD_NOTIFY`      | `1` (default is 1 = enable, 0 = disable)                          | Disable/Enable discord webhook         |
+| `EMAIL_NOTIFY`        | `1` (default is 1 = enable, 0 = disable)                          | Disable/Enable email smtp notification |
+| `_GITHUB_NOTIFY`        | `1` (default is 1 = enable, 0 = disable)                          | Disable/Enable github issue notification |
 
 The created Issue will mention this account. Leave it unset if you do not want a mention.
 
