@@ -24,8 +24,9 @@ OUTBOX_LIMIT = 1000
 PROCESSED_IDS_LIMIT = 500
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
-DISCORD_NOTIFY = os.getenv("DISCORD_NOTIFY", 1)
-EMAIL_NOTIFY = os.getenv("EMAIL_NOTIFY", 1)
+DISCORD_NOTIFY = os.getenv("DISCORD_NOTIFY", "1")
+EMAIL_NOTIFY = os.getenv("EMAIL_NOTIFY", "1")
+_GITHUB_NOTIFY = os.getenv("_GITHUB_NOTIFY", "1")
 GH_READ_TOKEN = os.getenv("GH_READ_TOKEN", "").strip()
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL", "").strip()
 DRY_RUN = os.getenv("DRY_RUN", "false").lower() == "true"
@@ -417,7 +418,7 @@ def process_outbox(config: dict[str, Any]) -> bool:
         channels = (*channels, "discord")
     if EMAIL_NOTIFY:
         channels = (*channels, "email")
-    if GITHUB_NOTIFY:
+    if _GITHUB_NOTIFY:
         channels = (*channels, "github")
     all_ok = True
     processed = set(config["processed_merge_ids"])
