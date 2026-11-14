@@ -86,9 +86,9 @@ outbox:
       last_error: 'Unknown notification channel: b'
       last_attempt_at: '2026-11-14T08:00:02Z'
 processed_merge_ids:
+- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
 - immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
 - bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
-- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
 - TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
 - noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
