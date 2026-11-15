@@ -3,17 +3,17 @@ repositories:
   repo: noctalia
   branches:
   - name: main
-    latest_merged_commit: d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-    latest_merged_at: '2026-11-14T01:57:21Z'
-    latest_merged_pr: 5213
+    latest_merged_commit: 3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+    latest_merged_at: '2026-11-15T01:05:23Z'
+    latest_merged_pr: 5363
     notify_existing: false
 - owner: noctalia-dev
   repo: umbriel
   branches:
   - name: main
-    latest_merged_commit: 88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-    latest_merged_at: '2026-11-12T22:20:58Z'
-    latest_merged_pr: 773
+    latest_merged_commit: e63d943a67279f1c88b9212d0f69cee0fc3034bd
+    latest_merged_at: '2026-11-15T01:06:37Z'
+    latest_merged_pr: 725
     notify_existing: false
 - owner: immich-app
   repo: immich
@@ -27,9 +27,9 @@ repositories:
   repo: THRM
   branches:
   - name: main
-    latest_merged_commit: e8bef2619c4db6d57e1807f137025282f8ebdee2
-    latest_merged_at: '2026-11-11T18:28:19Z'
-    latest_merged_pr: 50
+    latest_merged_commit: 42274826ba42aaad84d986951f33f119b287bba3
+    latest_merged_at: '2026-11-14T17:18:26Z'
+    latest_merged_pr: 52
     notify_existing: false
 - owner: bookorbit
   repo: bookorbit
@@ -40,10 +40,208 @@ repositories:
     latest_merged_pr: 2174
     notify_existing: false
 processed_merge_ids:
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
-- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-- bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
+- noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
 - immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
 - TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
-outbox: []
+- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+- bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
+- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
+- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+- TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
+- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
+- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
+- noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
+- noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
+- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
+outbox:
+- id: noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 5363
+  pr_title: 'fix(compositors): use wlr minimize state on unrecognized compositors'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/5363
+  commit_sha: 3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+  author: igalmarino
+  merged_at: '2026-11-15T01:05:23Z'
+  discovered_at: '2026-11-15T06:06:33Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:37Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:38Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 771
+  pr_title: 'fix(layer): clip layer surfaces to their output'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/771
+  commit_sha: 7ca6d84eb43d999df27180a16af5b3b78a1adc33
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/7ca6d84eb43d999df27180a16af5b3b78a1adc33
+  author: isaksamsten
+  merged_at: '2026-11-14T15:35:47Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:38Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:39Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 784
+  pr_title: 'feat(server): advertise wp_alpha_modifier_v1'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/784
+  commit_sha: 2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+  author: isaksamsten
+  merged_at: '2026-11-14T15:36:27Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:39Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:40Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 793
+  pr_title: 'fix(output): apply VRR changes with the next frame commit'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/793
+  commit_sha: 03eb189ddc95c933f74200baec3f1457d9c65fdf
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/03eb189ddc95c933f74200baec3f1457d9c65fdf
+  author: marco-kretz
+  merged_at: '2026-11-14T16:18:33Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:40Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:41Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 795
+  pr_title: 'feat(output): add vrr = "fullscreen_any"'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/795
+  commit_sha: db2133cc87212daf5db156c05cf05b442f136be1
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/db2133cc87212daf5db156c05cf05b442f136be1
+  author: dMopp
+  merged_at: '2026-11-14T16:28:19Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:41Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:43Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 759
+  pr_title: 'fix(focus): draw a focused tile above a fullscreen window in its column'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/759
+  commit_sha: 07181d995ee235784f352e068dd08930dcaf2d78
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/07181d995ee235784f352e068dd08930dcaf2d78
+  author: iamnitesh108
+  merged_at: '2026-11-14T22:01:27Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:44Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:45Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 778
+  pr_title: 'fix(xwayland): release X focus when nothing takes the keyboard'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/778
+  commit_sha: 2de13d6a4065292769016167abb55443e33998d2
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/2de13d6a4065292769016167abb55443e33998d2
+  author: yahya637
+  merged_at: '2026-11-14T22:30:15Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:45Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:46Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 725
+  pr_title: 'fix(input): keep a hidden cursor hidden through compositor warps'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/725
+  commit_sha: e63d943a67279f1c88b9212d0f69cee0fc3034bd
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/e63d943a67279f1c88b9212d0f69cee0fc3034bd
+  author: JohnnyP0T
+  merged_at: '2026-11-15T01:06:37Z'
+  discovered_at: '2026-11-15T06:06:34Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:47Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:49Z'
+    github:
+      status: pending
+- id: TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
+  owner: TIANLI0
+  repo: THRM
+  branch: main
+  pr_number: 52
+  pr_title: 'feat(linux): 完善linux硬件监控'
+  pr_url: https://github.com/TIANLI0/THRM/pull/52
+  commit_sha: 42274826ba42aaad84d986951f33f119b287bba3
+  commit_url: https://github.com/TIANLI0/THRM/commit/42274826ba42aaad84d986951f33f119b287bba3
+  author: BUSGL
+  merged_at: '2026-11-14T17:18:26Z'
+  discovered_at: '2026-11-15T06:06:35Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-15T06:06:49Z'
+    email:
+      status: sent
+      sent_at: '2026-11-15T06:06:50Z'
+    github:
+      status: pending
