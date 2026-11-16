@@ -11,9 +11,9 @@ repositories:
   repo: umbriel
   branches:
   - name: main
-    latest_merged_commit: e63d943a67279f1c88b9212d0f69cee0fc3034bd
-    latest_merged_at: '2026-11-15T01:06:37Z'
-    latest_merged_pr: 725
+    latest_merged_commit: 1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+    latest_merged_at: '2026-11-15T22:31:41Z'
+    latest_merged_pr: 800
     notify_existing: false
 - owner: immich-app
   repo: immich
@@ -40,24 +40,25 @@ repositories:
     latest_merged_pr: 2174
     notify_existing: false
 processed_merge_ids:
+- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
+- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
 - TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
+- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
+- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
 - bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
 - noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
-- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
-- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
-- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
-- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
-- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
-- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
 - noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
-- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
-- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
 - noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
+- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
+- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
+- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
 - noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
-- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
+- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
 outbox:
 - id: noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
   owner: noctalia-dev
@@ -309,5 +310,26 @@ outbox:
     email:
       status: sent
       sent_at: '2026-11-15T18:27:34Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 800
+  pr_title: 'fix(config): log every configuration diagnostic'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/800
+  commit_sha: 1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+  author: ZhangDM-520
+  merged_at: '2026-11-15T22:31:41Z'
+  discovered_at: '2026-11-16T04:39:51Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-16T04:39:54Z'
+    email:
+      status: sent
+      sent_at: '2026-11-16T04:39:56Z'
     github:
       status: pending
