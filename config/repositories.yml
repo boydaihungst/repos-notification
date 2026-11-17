@@ -3,9 +3,9 @@ repositories:
   repo: noctalia
   branches:
   - name: main
-    latest_merged_commit: c6b6304033785c85c3cef3ebfe195ce6fe469da8
-    latest_merged_at: '2026-11-15T16:48:47Z'
-    latest_merged_pr: 5328
+    latest_merged_commit: 9c96720ebc249ce731953936b07023c21c8b29b4
+    latest_merged_at: '2026-11-16T20:40:39Z'
+    latest_merged_pr: 5399
     notify_existing: false
 - owner: noctalia-dev
   repo: umbriel
@@ -19,9 +19,9 @@ repositories:
   repo: immich
   branches:
   - name: main
-    latest_merged_commit: f90cf86c96680e748c871f79d09e012864247c0a
-    latest_merged_at: '2026-11-16T14:40:03Z'
-    latest_merged_pr: 33352
+    latest_merged_commit: ff445d5fda8bf396e769df8977c316726dc25c9c
+    latest_merged_at: '2026-11-16T22:30:34Z'
+    latest_merged_pr: 33377
     notify_existing: false
 - owner: TIANLI0
   repo: THRM
@@ -40,26 +40,33 @@ repositories:
     latest_merged_pr: 2174
     notify_existing: false
 processed_merge_ids:
-- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
-- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
 - noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
-- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
-- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
-- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
+- immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
+- TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
 - noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
 - noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
 - noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+- immich-app/immich#33377@ff445d5fda8bf396e769df8977c316726dc25c9c
 - noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
+- noctalia-dev/noctalia#5359@b66af583a003a492b63e4c6fa6585a19e42bb094
+- noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
 - bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
 - noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
-- TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
-- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
-- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
-- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
-- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
 - noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
+- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
+- immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
+- immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+- immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
+- noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
+- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
+- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
+- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
+- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
 outbox:
 - id: noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
   owner: noctalia-dev
@@ -353,5 +360,152 @@ outbox:
     email:
       status: sent
       sent_at: '2026-11-16T14:44:17Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#5359@b66af583a003a492b63e4c6fa6585a19e42bb094
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 5359
+  pr_title: 'fix(tray): open the menu on left click when the item has no Activate'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/5359
+  commit_sha: b66af583a003a492b63e4c6fa6585a19e42bb094
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/b66af583a003a492b63e4c6fa6585a19e42bb094
+  author: IamM47Z
+  merged_at: '2026-11-16T15:34:12Z'
+  discovered_at: '2026-11-17T01:32:28Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:33Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:34Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 5399
+  pr_title: 'feat(context-menu): support compact menu layout'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/5399
+  commit_sha: 9c96720ebc249ce731953936b07023c21c8b29b4
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/9c96720ebc249ce731953936b07023c21c8b29b4
+  author: Yocraft-2000
+  merged_at: '2026-11-16T20:40:39Z'
+  discovered_at: '2026-11-17T01:32:28Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:34Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:35Z'
+    github:
+      status: pending
+- id: immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33351
+  pr_title: 'chore(web): update translations'
+  pr_url: https://github.com/immich-app/immich/pull/33351
+  commit_sha: b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+  commit_url: https://github.com/immich-app/immich/commit/b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+  author: hosted-weblate[bot]
+  merged_at: '2026-11-16T15:49:15Z'
+  discovered_at: '2026-11-17T01:32:31Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:35Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:38Z'
+    github:
+      status: pending
+- id: immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33335
+  pr_title: 'feat(server): thumbnail effort'
+  pr_url: https://github.com/immich-app/immich/pull/33335
+  commit_sha: d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+  commit_url: https://github.com/immich-app/immich/commit/d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+  author: mertalev
+  merged_at: '2026-11-16T18:02:11Z'
+  discovered_at: '2026-11-17T01:32:31Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:38Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:39Z'
+    github:
+      status: pending
+- id: immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 32820
+  pr_title: 'fix(server): sync transaction isolation'
+  pr_url: https://github.com/immich-app/immich/pull/32820
+  commit_sha: b1414c7d411d50c5f32b1e421516c749fee586e9
+  commit_url: https://github.com/immich-app/immich/commit/b1414c7d411d50c5f32b1e421516c749fee586e9
+  author: mertalev
+  merged_at: '2026-11-16T18:17:53Z'
+  discovered_at: '2026-11-17T01:32:31Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:39Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:40Z'
+    github:
+      status: pending
+- id: immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33333
+  pr_title: 'fix(server): respect thumbnail settings for face thumbnails'
+  pr_url: https://github.com/immich-app/immich/pull/33333
+  commit_sha: f932212299988b2cbada1687cb4015ff894efb31
+  commit_url: https://github.com/immich-app/immich/commit/f932212299988b2cbada1687cb4015ff894efb31
+  author: mertalev
+  merged_at: '2026-11-16T18:26:10Z'
+  discovered_at: '2026-11-17T01:32:31Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:41Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:42Z'
+    github:
+      status: pending
+- id: immich-app/immich#33377@ff445d5fda8bf396e769df8977c316726dc25c9c
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33377
+  pr_title: 'fix: dev stack install race'
+  pr_url: https://github.com/immich-app/immich/pull/33377
+  commit_sha: ff445d5fda8bf396e769df8977c316726dc25c9c
+  commit_url: https://github.com/immich-app/immich/commit/ff445d5fda8bf396e769df8977c316726dc25c9c
+  author: jrasm91
+  merged_at: '2026-11-16T22:30:34Z'
+  discovered_at: '2026-11-17T01:32:31Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T01:32:42Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T01:32:43Z'
     github:
       status: pending
