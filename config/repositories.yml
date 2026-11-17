@@ -15,30 +15,6 @@ repositories:
     latest_merged_at: '2026-11-15T22:31:41Z'
     latest_merged_pr: 800
     notify_existing: false
-- owner: immich-app
-  repo: immich
-  branches:
-  - name: main
-    latest_merged_commit: a2022cc266c414cad5f91a5abafa6fe08b928eff
-    latest_merged_at: '2026-11-17T15:27:47Z'
-    latest_merged_pr: 33239
-    notify_existing: false
-- owner: TIANLI0
-  repo: THRM
-  branches:
-  - name: main
-    latest_merged_commit: 42274826ba42aaad84d986951f33f119b287bba3
-    latest_merged_at: '2026-11-14T17:18:26Z'
-    latest_merged_pr: 52
-    notify_existing: false
-- owner: bookorbit
-  repo: bookorbit
-  branches:
-  - name: main
-    latest_merged_commit: c77966cc529423e993fae8a298aa77048b43bba2
-    latest_merged_at: '2026-11-12T19:09:29Z'
-    latest_merged_pr: 2174
-    notify_existing: false
 processed_merge_ids:
 - TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
 - immich-app/immich#33393@bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
