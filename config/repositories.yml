@@ -3,9 +3,9 @@ repositories:
   repo: noctalia
   branches:
   - name: main
-    latest_merged_commit: 9c96720ebc249ce731953936b07023c21c8b29b4
-    latest_merged_at: '2026-11-16T20:40:39Z'
-    latest_merged_pr: 5399
+    latest_merged_commit: 0d82f3968078c0d650d0d887fe85fbdf61cbafb1
+    latest_merged_at: '2026-11-17T14:59:30Z'
+    latest_merged_pr: 4935
     notify_existing: false
 - owner: noctalia-dev
   repo: umbriel
@@ -19,9 +19,9 @@ repositories:
   repo: immich
   branches:
   - name: main
-    latest_merged_commit: ff445d5fda8bf396e769df8977c316726dc25c9c
-    latest_merged_at: '2026-11-16T22:30:34Z'
-    latest_merged_pr: 33377
+    latest_merged_commit: a2022cc266c414cad5f91a5abafa6fe08b928eff
+    latest_merged_at: '2026-11-17T15:27:47Z'
+    latest_merged_pr: 33239
     notify_existing: false
 - owner: TIANLI0
   repo: THRM
@@ -40,33 +40,51 @@ repositories:
     latest_merged_pr: 2174
     notify_existing: false
 processed_merge_ids:
-- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
-- immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
+- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
+- immich-app/immich#33393@bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
 - TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
-- noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
-- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
-- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
-- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
-- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+- immich-app/immich#33401@ce9176adf39f3fef9a54de2619f25d588b724b92
+- noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
+- immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
+- noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
+- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
 - immich-app/immich#33377@ff445d5fda8bf396e769df8977c316726dc25c9c
-- noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
-- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
 - noctalia-dev/noctalia#5359@b66af583a003a492b63e4c6fa6585a19e42bb094
+- immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
+- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
+- immich-app/immich#33396@ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
+- immich-app/immich#33275@f98d6ef1bbdc7ca950e4bd855882d68a94238e42
+- immich-app/immich#33363@a2e50664ac94dff6f9742c6f0700f4d125313ee3
+- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
 - noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
 - bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
-- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
-- noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
-- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
-- immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
-- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
-- immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
-- immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
-- noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
-- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
 - noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
-- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
+- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
+- immich-app/immich#33395@8a11e96e28b609972aa884b930ab41009d9261b7
+- immich-app/immich#33394@842b1b332c128c840b7c4381602d7359ed0752dc
+- immich-app/immich#33388@1f6d98d92133ee81b68eb72b5d939cc042528a7d
+- immich-app/immich#33213@aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+- immich-app/immich#33366@47b79349e50734156053126ccefd7a25121062bf
+- immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+- noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
+- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
+- noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
+- immich-app/immich#33239@a2022cc266c414cad5f91a5abafa6fe08b928eff
+- immich-app/immich#33283@0478c04df16e56931b8e2cacb6b9ac2da9a37fda
+- immich-app/immich#33414@1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+- immich-app/immich#33403@1214bc071cd6bcec348f1319114822615c0fd52d
+- immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+- noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+- immich-app/immich#33385@a26281d44b35da86f34e7b22b07115cfbe64fce7
+- immich-app/immich#33389@299e840a9d56177d24eeeb9bda0b7b752ecac401
+- immich-app/immich#33365@17baae608c46b66e0e8890b202c9d9d12676ac3a
+- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
+- noctalia-dev/noctalia#4935@0d82f3968078c0d650d0d887fe85fbdf61cbafb1
 outbox:
 - id: noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
   owner: noctalia-dev
@@ -507,5 +525,383 @@ outbox:
     email:
       status: sent
       sent_at: '2026-11-17T01:32:43Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#4935@0d82f3968078c0d650d0d887fe85fbdf61cbafb1
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 4935
+  pr_title: 'feat(nix): support runtime dependencies for pinned plugins'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/4935
+  commit_sha: 0d82f3968078c0d650d0d887fe85fbdf61cbafb1
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/0d82f3968078c0d650d0d887fe85fbdf61cbafb1
+  author: barrulus
+  merged_at: '2026-11-17T14:59:30Z'
+  discovered_at: '2026-11-17T15:28:21Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:28Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:31Z'
+    github:
+      status: pending
+- id: immich-app/immich#33385@a26281d44b35da86f34e7b22b07115cfbe64fce7
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33385
+  pr_title: 'chore(deps): update machine-learning'
+  pr_url: https://github.com/immich-app/immich/pull/33385
+  commit_sha: a26281d44b35da86f34e7b22b07115cfbe64fce7
+  commit_url: https://github.com/immich-app/immich/commit/a26281d44b35da86f34e7b22b07115cfbe64fce7
+  author: renovate[bot]
+  merged_at: '2026-11-17T07:26:23Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:31Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:34Z'
+    github:
+      status: pending
+- id: immich-app/immich#33401@ce9176adf39f3fef9a54de2619f25d588b724b92
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33401
+  pr_title: 'chore(github-action): update action korthout/backport-action (v4.7.1 → v5.0.0)'
+  pr_url: https://github.com/immich-app/immich/pull/33401
+  commit_sha: ce9176adf39f3fef9a54de2619f25d588b724b92
+  commit_url: https://github.com/immich-app/immich/commit/ce9176adf39f3fef9a54de2619f25d588b724b92
+  author: renovate[bot]
+  merged_at: '2026-11-17T09:18:58Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:34Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:35Z'
+    github:
+      status: pending
+- id: immich-app/immich#33403@1214bc071cd6bcec348f1319114822615c0fd52d
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33403
+  pr_title: 'chore(npm): update dependency nestjs-kysely (3.1.5 → 4.0.0)'
+  pr_url: https://github.com/immich-app/immich/pull/33403
+  commit_sha: 1214bc071cd6bcec348f1319114822615c0fd52d
+  commit_url: https://github.com/immich-app/immich/commit/1214bc071cd6bcec348f1319114822615c0fd52d
+  author: renovate[bot]
+  merged_at: '2026-11-17T09:31:24Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:36Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:37Z'
+    github:
+      status: pending
+- id: immich-app/immich#33396@ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33396
+  pr_title: 'chore(container): update base-image (202611031105 → 202611101105)'
+  pr_url: https://github.com/immich-app/immich/pull/33396
+  commit_sha: ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
+  commit_url: https://github.com/immich-app/immich/commit/ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
+  author: renovate[bot]
+  merged_at: '2026-11-17T09:35:31Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:37Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:38Z'
+    github:
+      status: pending
+- id: immich-app/immich#33389@299e840a9d56177d24eeeb9bda0b7b752ecac401
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33389
+  pr_title: 'chore(rust): update crate moxcms (0.9.1 → 0.9.2)'
+  pr_url: https://github.com/immich-app/immich/pull/33389
+  commit_sha: 299e840a9d56177d24eeeb9bda0b7b752ecac401
+  commit_url: https://github.com/immich-app/immich/commit/299e840a9d56177d24eeeb9bda0b7b752ecac401
+  author: renovate[bot]
+  merged_at: '2026-11-17T10:02:13Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:39Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:40Z'
+    github:
+      status: pending
+- id: immich-app/immich#33395@8a11e96e28b609972aa884b930ab41009d9261b7
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33395
+  pr_title: 'chore(npm): update typescript-projects'
+  pr_url: https://github.com/immich-app/immich/pull/33395
+  commit_sha: 8a11e96e28b609972aa884b930ab41009d9261b7
+  commit_url: https://github.com/immich-app/immich/commit/8a11e96e28b609972aa884b930ab41009d9261b7
+  author: renovate[bot]
+  merged_at: '2026-11-17T10:02:18Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:41Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:42Z'
+    github:
+      status: pending
+- id: immich-app/immich#33365@17baae608c46b66e0e8890b202c9d9d12676ac3a
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33365
+  pr_title: 'fix(web): setting input label'
+  pr_url: https://github.com/immich-app/immich/pull/33365
+  commit_sha: 17baae608c46b66e0e8890b202c9d9d12676ac3a
+  commit_url: https://github.com/immich-app/immich/commit/17baae608c46b66e0e8890b202c9d9d12676ac3a
+  author: jrasm91
+  merged_at: '2026-11-17T10:48:54Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:42Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:43Z'
+    github:
+      status: pending
+- id: immich-app/immich#33275@f98d6ef1bbdc7ca950e4bd855882d68a94238e42
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33275
+  pr_title: 'fix(web): hash external styles for csp'
+  pr_url: https://github.com/immich-app/immich/pull/33275
+  commit_sha: f98d6ef1bbdc7ca950e4bd855882d68a94238e42
+  commit_url: https://github.com/immich-app/immich/commit/f98d6ef1bbdc7ca950e4bd855882d68a94238e42
+  author: bo0tzz
+  merged_at: '2026-11-17T10:50:38Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:43Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:45Z'
+    github:
+      status: pending
+- id: immich-app/immich#33283@0478c04df16e56931b8e2cacb6b9ac2da9a37fda
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33283
+  pr_title: 'feat: credit additional users in release notes'
+  pr_url: https://github.com/immich-app/immich/pull/33283
+  commit_sha: 0478c04df16e56931b8e2cacb6b9ac2da9a37fda
+  commit_url: https://github.com/immich-app/immich/commit/0478c04df16e56931b8e2cacb6b9ac2da9a37fda
+  author: bo0tzz
+  merged_at: '2026-11-17T10:51:19Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:45Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:46Z'
+    github:
+      status: pending
+- id: immich-app/immich#33394@842b1b332c128c840b7c4381602d7359ed0752dc
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33394
+  pr_title: 'chore(npm): update dependency exiftool-vendored (39.1.0 → 39.2.0)'
+  pr_url: https://github.com/immich-app/immich/pull/33394
+  commit_sha: 842b1b332c128c840b7c4381602d7359ed0752dc
+  commit_url: https://github.com/immich-app/immich/commit/842b1b332c128c840b7c4381602d7359ed0752dc
+  author: renovate[bot]
+  merged_at: '2026-11-17T11:54:01Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:46Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:47Z'
+    github:
+      status: pending
+- id: immich-app/immich#33414@1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33414
+  pr_title: 'test(web): pin prompt medium tests'
+  pr_url: https://github.com/immich-app/immich/pull/33414
+  commit_sha: 1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+  commit_url: https://github.com/immich-app/immich/commit/1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+  author: bo0tzz
+  merged_at: '2026-11-17T13:37:34Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:48Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:49Z'
+    github:
+      status: pending
+- id: immich-app/immich#33393@bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33393
+  pr_title: 'chore(npm): update dependency @immich/ui (0.92.0 → 0.93.0)'
+  pr_url: https://github.com/immich-app/immich/pull/33393
+  commit_sha: bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
+  commit_url: https://github.com/immich-app/immich/commit/bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
+  author: renovate[bot]
+  merged_at: '2026-11-17T14:10:50Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:49Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:50Z'
+    github:
+      status: pending
+- id: immich-app/immich#33388@1f6d98d92133ee81b68eb72b5d939cc042528a7d
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33388
+  pr_title: 'chore(npm): update typescript-projects'
+  pr_url: https://github.com/immich-app/immich/pull/33388
+  commit_sha: 1f6d98d92133ee81b68eb72b5d939cc042528a7d
+  commit_url: https://github.com/immich-app/immich/commit/1f6d98d92133ee81b68eb72b5d939cc042528a7d
+  author: renovate[bot]
+  merged_at: '2026-11-17T14:31:04Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:51Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:52Z'
+    github:
+      status: pending
+- id: immich-app/immich#33363@a2e50664ac94dff6f9742c6f0700f4d125313ee3
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33363
+  pr_title: 'refactor: web trash queries'
+  pr_url: https://github.com/immich-app/immich/pull/33363
+  commit_sha: a2e50664ac94dff6f9742c6f0700f4d125313ee3
+  commit_url: https://github.com/immich-app/immich/commit/a2e50664ac94dff6f9742c6f0700f4d125313ee3
+  author: jrasm91
+  merged_at: '2026-11-17T14:56:03Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:52Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:54Z'
+    github:
+      status: pending
+- id: immich-app/immich#33213@aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33213
+  pr_title: 'feat: workflow tag filter children matching'
+  pr_url: https://github.com/immich-app/immich/pull/33213
+  commit_sha: aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+  commit_url: https://github.com/immich-app/immich/commit/aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+  author: danieldietzler
+  merged_at: '2026-11-17T15:02:26Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:55Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:28:56Z'
+    github:
+      status: pending
+- id: immich-app/immich#33366@47b79349e50734156053126ccefd7a25121062bf
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33366
+  pr_title: 'refactor: web sharing queries'
+  pr_url: https://github.com/immich-app/immich/pull/33366
+  commit_sha: 47b79349e50734156053126ccefd7a25121062bf
+  commit_url: https://github.com/immich-app/immich/commit/47b79349e50734156053126ccefd7a25121062bf
+  author: jrasm91
+  merged_at: '2026-11-17T15:17:06Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:28:57Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:29:00Z'
+    github:
+      status: pending
+- id: immich-app/immich#33239@a2022cc266c414cad5f91a5abafa6fe08b928eff
+  owner: immich-app
+  repo: immich
+  branch: main
+  pr_number: 33239
+  pr_title: 'fix: integrity report downloads'
+  pr_url: https://github.com/immich-app/immich/pull/33239
+  commit_sha: a2022cc266c414cad5f91a5abafa6fe08b928eff
+  commit_url: https://github.com/immich-app/immich/commit/a2022cc266c414cad5f91a5abafa6fe08b928eff
+  author: danieldietzler
+  merged_at: '2026-11-17T15:27:47Z'
+  discovered_at: '2026-11-17T15:28:25Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-17T15:29:00Z'
+    email:
+      status: sent
+      sent_at: '2026-11-17T15:29:03Z'
     github:
       status: pending
