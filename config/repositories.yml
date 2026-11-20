@@ -3,80 +3,90 @@ repositories:
   repo: noctalia
   branches:
   - name: main
-    latest_merged_commit: 6fdf8858a1d3b1926df23e63a1ac1e75b6599586
-    latest_merged_at: '2026-11-20T00:13:36Z'
-    latest_merged_pr: 5381
+    latest_merged_commit: c46d84b294de8bdbae7d47b2bae430b1ddeea713
+    latest_merged_at: '2026-11-20T13:19:19Z'
+    latest_merged_pr: 5441
     notify_existing: false
 - owner: noctalia-dev
   repo: umbriel
   branches:
   - name: main
-    latest_merged_commit: 13332d406563a1bd9b58026c0483a6dc47244daf
-    latest_merged_at: '2026-11-19T14:10:12Z'
-    latest_merged_pr: 856
+    latest_merged_commit: bc10febde287a6430d6af9dd6bada478beeb0ae5
+    latest_merged_at: '2026-11-20T02:40:39Z'
+    latest_merged_pr: 820
     notify_existing: false
 processed_merge_ids:
-- immich-app/immich#33396@ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
-- immich-app/immich#33414@1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+- noctalia-dev/umbriel#820@bc10febde287a6430d6af9dd6bada478beeb0ae5
+- immich-app/immich#33213@aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+- immich-app/immich#33389@299e840a9d56177d24eeeb9bda0b7b752ecac401
+- noctalia-dev/noctalia#4183@a81e34e7f4fdada43ac7c9fe911e224eb6ee5f0a
+- noctalia-dev/umbriel#819@e5f72e1eadc9990670eb89a4b0ca1564fadf1668
+- noctalia-dev/noctalia#5405@49ae93cddbe459e922c567c01ce28d4924dacd2b
+- noctalia-dev/noctalia#5408@a9a5e35bdfffbafac35e402b30d8a8f677c6a1e6
+- immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
+- noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
+- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
+- noctalia-dev/umbriel#856@13332d406563a1bd9b58026c0483a6dc47244daf
+- immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
+- noctalia-dev/noctalia#5359@b66af583a003a492b63e4c6fa6585a19e42bb094
+- noctalia-dev/noctalia#5429@57982cbc1adaad1673a8c42f5795e286f9fb5194
+- immich-app/immich#33395@8a11e96e28b609972aa884b930ab41009d9261b7
+- noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
+- noctalia-dev/umbriel#823@9f824c8cb05ad2787e20ca0440c4654196efd8f9
+- noctalia-dev/noctalia#5353@0e32beeeb3d3fedb6d1da720abcfe6fe4f4fad75
+- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
+- immich-app/immich#33403@1214bc071cd6bcec348f1319114822615c0fd52d
 - immich-app/immich#33366@47b79349e50734156053126ccefd7a25121062bf
-- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+- noctalia-dev/noctalia#5422@7111f2f48ef7e45f1988461b4b6ad0eeb7356895
+- immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
+- noctalia-dev/noctalia#5398@4e1dcb6eb2dac494af63db9ab9a0017fcbf0f7c4
+- noctalia-dev/noctalia#5404@1d8203f2a1217ad84baea6943cf23caed430ec23
+- noctalia-dev/umbriel#861@5ae62eb782e7b6a2e7db1ed819dcfe9c18933679
+- noctalia-dev/noctalia#5420@2edb46da9cd2acaba9c89e0033b8d00ad1cfc0a7
+- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
+- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
+- noctalia-dev/noctalia#5395@d9483363739a33c56e51ee46db8e4238fdf655df
+- immich-app/immich#33377@ff445d5fda8bf396e769df8977c316726dc25c9c
+- noctalia-dev/noctalia#5403@b34f1fcb33f6b95e1652e1fec865b3b8ee79029f
+- immich-app/immich#33414@1c3ba6f9e35f6fa4ab92e519646f9be62fd39ddf
+- noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
 - immich-app/immich#33275@f98d6ef1bbdc7ca950e4bd855882d68a94238e42
 - noctalia-dev/noctalia#5344@bb4ad8cfa8d95b26bec3c08d711144fabd438e6a
-- noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
-- noctalia-dev/noctalia#5429@57982cbc1adaad1673a8c42f5795e286f9fb5194
-- bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
-- immich-app/immich#33401@ce9176adf39f3fef9a54de2619f25d588b724b92
-- noctalia-dev/noctalia#5420@2edb46da9cd2acaba9c89e0033b8d00ad1cfc0a7
-- noctalia-dev/umbriel#856@13332d406563a1bd9b58026c0483a6dc47244daf
-- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
-- immich-app/immich#33239@a2022cc266c414cad5f91a5abafa6fe08b928eff
-- noctalia-dev/noctalia#5418@9648ba40748b6199f802fa418535fcbc8e085a61
-- immich-app/immich#33335@d9a76cb3a8988db248e39d6bfcee1de093d8d82f
-- immich-app/immich#33365@17baae608c46b66e0e8890b202c9d9d12676ac3a
-- noctalia-dev/noctalia#5422@7111f2f48ef7e45f1988461b4b6ad0eeb7356895
-- immich-app/immich#33394@842b1b332c128c840b7c4381602d7359ed0752dc
-- noctalia-dev/noctalia#5399@9c96720ebc249ce731953936b07023c21c8b29b4
-- noctalia-dev/umbriel#771@7ca6d84eb43d999df27180a16af5b3b78a1adc33
-- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
-- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
-- immich-app/immich#33283@0478c04df16e56931b8e2cacb6b9ac2da9a37fda
-- immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
-- noctalia-dev/noctalia#5404@1d8203f2a1217ad84baea6943cf23caed430ec23
-- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
-- immich-app/immich#33385@a26281d44b35da86f34e7b22b07115cfbe64fce7
-- noctalia-dev/umbriel#784@2cc809f88c7af978a15ac6d0bafc256e6b468d7d
-- TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
-- noctalia-dev/noctalia#5405@49ae93cddbe459e922c567c01ce28d4924dacd2b
-- immich-app/immich#33333@f932212299988b2cbada1687cb4015ff894efb31
-- immich-app/immich#33351@b11ee4039d2aae5f7fc17a5eb581dd20d9c544e8
 - noctalia-dev/noctalia#5381@6fdf8858a1d3b1926df23e63a1ac1e75b6599586
-- noctalia-dev/noctalia#5359@b66af583a003a492b63e4c6fa6585a19e42bb094
-- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
-- noctalia-dev/noctalia#5339@dda0f9ef64411029a230bf2e66c9deefe7544a72
-- immich-app/immich#33393@bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
-- immich-app/immich#33363@a2e50664ac94dff6f9742c6f0700f4d125313ee3
-- immich-app/immich#33389@299e840a9d56177d24eeeb9bda0b7b752ecac401
-- immich-app/immich#33395@8a11e96e28b609972aa884b930ab41009d9261b7
-- noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
-- noctalia-dev/umbriel#800@1bbbf155d25b2a338c7b6d52863d9f6efaf346ac
-- noctalia-dev/noctalia#5401@7ada34205f00643d33147f473e1ee0b645922ba8
-- noctalia-dev/noctalia#5410@2feffcaf0b6842d014045ce641c89e64b4be08a8
-- TIANLI0/THRM#50@e8bef2619c4db6d57e1807f137025282f8ebdee2
-- noctalia-dev/noctalia#5408@a9a5e35bdfffbafac35e402b30d8a8f677c6a1e6
-- noctalia-dev/noctalia#5395@d9483363739a33c56e51ee46db8e4238fdf655df
-- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
-- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
-- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
-- noctalia-dev/umbriel#861@5ae62eb782e7b6a2e7db1ed819dcfe9c18933679
-- immich-app/immich#33352@f90cf86c96680e748c871f79d09e012864247c0a
+- immich-app/immich#33401@ce9176adf39f3fef9a54de2619f25d588b724b92
 - noctalia-dev/noctalia#4935@0d82f3968078c0d650d0d887fe85fbdf61cbafb1
-- immich-app/immich#33388@1f6d98d92133ee81b68eb72b5d939cc042528a7d
-- immich-app/immich#33403@1214bc071cd6bcec348f1319114822615c0fd52d
-- noctalia-dev/noctalia#5398@4e1dcb6eb2dac494af63db9ab9a0017fcbf0f7c4
-- immich-app/immich#33213@aab0104ece7d67ad1c35aaae43eba25d245cbb1f
+- bookorbit/bookorbit#2174@c77966cc529423e993fae8a298aa77048b43bba2
+- noctalia-dev/umbriel#815@76de0ff1cdd0c0751d6ad0adc8241cec41bfd07f
+- immich-app/immich#33393@bbeb4c9cc626b2d60b067cf5230c2115bdd8001a
+- TIANLI0/THRM#52@42274826ba42aaad84d986951f33f119b287bba3
+- immich-app/immich#32820@b1414c7d411d50c5f32b1e421516c749fee586e9
+- noctalia-dev/noctalia#5441@c46d84b294de8bdbae7d47b2bae430b1ddeea713
+- immich-app/immich#33239@a2022cc266c414cad5f91a5abafa6fe08b928eff
+- noctalia-dev/umbriel#829@9404848672c935231c6d77f2ef4dab1a456b4eb4
+- noctalia-dev/noctalia#5418@9648ba40748b6199f802fa418535fcbc8e085a61
+- noctalia-dev/umbriel#824@fe1b9bfe719acd9169c8cd255ad7cb65ad082322
+- immich-app/immich#33385@a26281d44b35da86f34e7b22b07115cfbe64fce7
+- noctalia-dev/umbriel#793@03eb189ddc95c933f74200baec3f1457d9c65fdf
+- noctalia-dev/umbriel#795@db2133cc87212daf5db156c05cf05b442f136be1
+- noctalia-dev/umbriel#778@2de13d6a4065292769016167abb55443e33998d2
+- noctalia-dev/umbriel#725@e63d943a67279f1c88b9212d0f69cee0fc3034bd
+- noctalia-dev/umbriel#827@0620c08c4a68d2cd06c8c27faa752e55b4b1910c
+- noctalia-dev/noctalia#5410@2feffcaf0b6842d014045ce641c89e64b4be08a8
+- immich-app/immich#33260@e5d6eb7be67834f59d90e4b7a86f5dec7ac9af86
+- noctalia-dev/noctalia#5324@8eecf934421c1c992f85884314ac5c323935b944
+- immich-app/immich#33396@ff9a45cc15ff8f829a3e3ea080a682f8bfd57a6e
+- noctalia-dev/noctalia#5327@10d864caae089edb69fb5703d8f3e5a33637820f
+- noctalia-dev/noctalia#5401@7ada34205f00643d33147f473e1ee0b645922ba8
+- noctalia-dev/noctalia#5328@c6b6304033785c85c3cef3ebfe195ce6fe469da8
+- immich-app/immich#33394@842b1b332c128c840b7c4381602d7359ed0752dc
 - noctalia-dev/umbriel#773@88ba829c6152ee55cd2ffa9d80e7f9dee543605b
-- noctalia-dev/noctalia#5403@b34f1fcb33f6b95e1652e1fec865b3b8ee79029f
-- immich-app/immich#33377@ff445d5fda8bf396e769df8977c316726dc25c9c
+- noctalia-dev/umbriel#759@07181d995ee235784f352e068dd08930dcaf2d78
+- noctalia-dev/noctalia#5213@d3b7e6d5ebe45a41e2d3b6abc8cc9baebdd43b36
+- immich-app/immich#33283@0478c04df16e56931b8e2cacb6b9ac2da9a37fda
+- immich-app/immich#33388@1f6d98d92133ee81b68eb72b5d939cc042528a7d
+- noctalia-dev/noctalia#5339@dda0f9ef64411029a230bf2e66c9deefe7544a72
+- immich-app/immich#33365@17baae608c46b66e0e8890b202c9d9d12676ac3a
+- immich-app/immich#33363@a2e50664ac94dff6f9742c6f0700f4d125313ee3
 outbox:
 - id: noctalia-dev/noctalia#5363@3e17932af6c5bb36c90cf425f89935c84a8e0ec7
   owner: noctalia-dev
@@ -1231,5 +1241,215 @@ outbox:
     email:
       status: sent
       sent_at: '2026-11-20T00:16:29Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#4183@a81e34e7f4fdada43ac7c9fe911e224eb6ee5f0a
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 4183
+  pr_title: 'feat(bar): Smart Wayland Layer Option'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/4183
+  commit_sha: a81e34e7f4fdada43ac7c9fe911e224eb6ee5f0a
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/a81e34e7f4fdada43ac7c9fe911e224eb6ee5f0a
+  author: 9Prestidigitator
+  merged_at: '2026-11-20T00:33:44Z'
+  discovered_at: '2026-11-20T14:52:28Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:29Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:30Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#5353@0e32beeeb3d3fedb6d1da720abcfe6fe4f4fad75
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 5353
+  pr_title: 'fix(ui): reset dropped style props on retained ui tree nodes'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/5353
+  commit_sha: 0e32beeeb3d3fedb6d1da720abcfe6fe4f4fad75
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/0e32beeeb3d3fedb6d1da720abcfe6fe4f4fad75
+  author: DarulQutni-Q
+  merged_at: '2026-11-20T01:06:04Z'
+  discovered_at: '2026-11-20T14:52:28Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:30Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:31Z'
+    github:
+      status: pending
+- id: noctalia-dev/noctalia#5441@c46d84b294de8bdbae7d47b2bae430b1ddeea713
+  owner: noctalia-dev
+  repo: noctalia
+  branch: main
+  pr_number: 5441
+  pr_title: 'fix(label): match scrolling to the text buffer grid'
+  pr_url: https://github.com/noctalia-dev/noctalia/pull/5441
+  commit_sha: c46d84b294de8bdbae7d47b2bae430b1ddeea713
+  commit_url: https://github.com/noctalia-dev/noctalia/commit/c46d84b294de8bdbae7d47b2bae430b1ddeea713
+  author: Jack297
+  merged_at: '2026-11-20T13:19:19Z'
+  discovered_at: '2026-11-20T14:52:28Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:31Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:31Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#824@fe1b9bfe719acd9169c8cd255ad7cb65ad082322
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 824
+  pr_title: 'perf(view): evaluate drag deformation with Horner''s method'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/824
+  commit_sha: fe1b9bfe719acd9169c8cd255ad7cb65ad082322
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/fe1b9bfe719acd9169c8cd255ad7cb65ad082322
+  author: 0N3-0
+  merged_at: '2026-11-20T01:45:38Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:32Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:32Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#815@76de0ff1cdd0c0751d6ad0adc8241cec41bfd07f
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 815
+  pr_title: 'fix(layout): size a window moved into a column like a new window'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/815
+  commit_sha: 76de0ff1cdd0c0751d6ad0adc8241cec41bfd07f
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/76de0ff1cdd0c0751d6ad0adc8241cec41bfd07f
+  author: iamnitesh108
+  merged_at: '2026-11-20T01:57:58Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:32Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:33Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#827@0620c08c4a68d2cd06c8c27faa752e55b4b1910c
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 827
+  pr_title: 'fix(input): add the surface clip to touch and tablet motion coordinates'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/827
+  commit_sha: 0620c08c4a68d2cd06c8c27faa752e55b4b1910c
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/0620c08c4a68d2cd06c8c27faa752e55b4b1910c
+  author: amadeusp
+  merged_at: '2026-11-20T02:16:18Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:33Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:34Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#823@9f824c8cb05ad2787e20ca0440c4654196efd8f9
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 823
+  pr_title: 'fix(layout): show the tab before a tab moved out of its group'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/823
+  commit_sha: 9f824c8cb05ad2787e20ca0440c4654196efd8f9
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/9f824c8cb05ad2787e20ca0440c4654196efd8f9
+  author: iamnitesh108
+  merged_at: '2026-11-20T02:18:46Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:34Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:35Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#819@e5f72e1eadc9990670eb89a4b0ca1564fadf1668
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 819
+  pr_title: 'fix(output): retry a failed frame commit after 1 ms, backing off'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/819
+  commit_sha: e5f72e1eadc9990670eb89a4b0ca1564fadf1668
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/e5f72e1eadc9990670eb89a4b0ca1564fadf1668
+  author: GenuineMoron
+  merged_at: '2026-11-20T02:20:36Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:35Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:36Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#829@9404848672c935231c6d77f2ef4dab1a456b4eb4
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 829
+  pr_title: 'fix(gestures): apply center_focused after 3-finger swipes'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/829
+  commit_sha: 9404848672c935231c6d77f2ef4dab1a456b4eb4
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/9404848672c935231c6d77f2ef4dab1a456b4eb4
+  author: Yocraft-2000
+  merged_at: '2026-11-20T02:34:33Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:36Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:37Z'
+    github:
+      status: pending
+- id: noctalia-dev/umbriel#820@bc10febde287a6430d6af9dd6bada478beeb0ae5
+  owner: noctalia-dev
+  repo: umbriel
+  branch: main
+  pr_number: 820
+  pr_title: 'fix(spawn): name the launched process in the launch record'
+  pr_url: https://github.com/noctalia-dev/umbriel/pull/820
+  commit_sha: bc10febde287a6430d6af9dd6bada478beeb0ae5
+  commit_url: https://github.com/noctalia-dev/umbriel/commit/bc10febde287a6430d6af9dd6bada478beeb0ae5
+  author: ZhangDM-520
+  merged_at: '2026-11-20T02:40:39Z'
+  discovered_at: '2026-11-20T14:52:29Z'
+  delivery:
+    discord:
+      status: sent
+      sent_at: '2026-11-20T14:52:37Z'
+    email:
+      status: sent
+      sent_at: '2026-11-20T14:52:38Z'
     github:
       status: pending
